@@ -27,6 +27,12 @@ File will be extracted to `somefile.dds`, not *all* files will work correct.
     python blk_unpack.py somefile.blk
 File will be extracted to `somefile.blkx`, this type of file contains settings.
 
+    blk_minify.exe mission.blk minified_mission.blk
+File will be shrunk to ~70-80% of its size, useful for creating missions at or near the 512kB cap.
+
+    blk_minify.exe --strip_empty_objects mission.blk minified_mission.blk
+File will be shrunk a little more, at the expense of removing some empty objects. It is not known if this will break the mission or not, so it's optional.
+
 ### Or if you use *.exe file scripts
 
 Just drag'n'drop wt files onto exe script files.
